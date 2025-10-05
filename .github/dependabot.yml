@@ -1,0 +1,9 @@
+version: 2
+updates:
+  # 为Python的pip依赖项启用版本更新
+  - package-ecosystem: "pip"
+    directory: "/" # 依赖文件所在位置，根目录
+    schedule:
+      interval: "weekly" # 检查更新的频率：每周
+    # 可以添加更多自定义选项
+    open-pull-requests-limit: 10 # 同时打开的PR数量限制
